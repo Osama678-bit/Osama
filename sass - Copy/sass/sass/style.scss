@@ -1,0 +1,9 @@
+@mixin div{
+  width: 400px;
+  border-radius: 6px;
+  background-color: gray;
+}
+p{
+ @include div;
+ height: 50px;
+}

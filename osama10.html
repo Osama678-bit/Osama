@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title></title>
+</head>
+<body>
+  <div class="div1">div1</div>
+  <div class="div2">div2</div>
+  <div class="div3">div3</div>
+  <div class="div4">div4</div>
+  <style>
+  div{
+    position: absolute;
+    display: none;
+  }
+  .div1{
+    width : 100px;
+    height : 100px;
+    background-color : blue;
+    border : 2px solid black;
+    top : 0px;
+    left : 0px;
+    z-index :
+  }
+  .div2{
+   width : 100px;
+    height : 100px;
+    background-color : yellow;
+    border : 2px solid black; 
+    top : 20px;
+    left : 20px;
+    z-index :1
+  }
+  .div3{
+   width : 100px;
+    height : 100px;
+    background-color : green;
+    border : 2px solid black; 
+    top : 40px;
+    left : 40px;
+    z-index :
+  }
+    .div4{
+      width : 100px;
+    height : 100px;
+    background-color : red;
+    border : 2px solid black; 
+     top : 60px;
+      left : 60px;
+      z-index :
+    }
+  </style>
+  <script src="osama.js"></script>
+  <script>
+    $(document).ready(function(){
+     $(".div1").show(1000); 
+     $(".div1").hide(1000);
+     $(".div2").show(2000);
+     $(".div2").hide(1000);
+    $(".div3").show(3000);
+    $(".div3").hide(1000);
+    $(".div4").show(4000);
+    $(".div4").hide(1000);
+    $(".div4").slideDown();
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<h3><i class="fas fa-gamepad"></i> تحميل ألعاب</h3>
+  <title>الصفحة الرئيسية</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      background-image: url('background-pattern.png');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      width: 30%;
+      max-width: 300px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  h2{
+    animation: changcolor 2s infinite;
+  }
+  @keyframes changcolor {
+   from{
+    color: yellow;
+  }
+     25%{
+    color: red;
+  }
+    50%{
+    color: blue;
+  }
+    100%{
+    color: green;
+  }
+}
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  .card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+  .card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+  .card:hover {
+  transform: scale(1.1) rotate(2deg);
+  transition: transform 0.3s ease, box-shadow 0.
+  <script>
+  const searchButton = document.querySelector("button");
+  searchButton.addEventListener("click", () => {
+    alert("ميزة البحث غير مفعلة بعد!");
+  });
+</script>
+  </style>
+</head>
+<body>
+  <header>
+    <h1>الصفحة الرئيسية</h1>
+    <h2> OSAMA موقع</h2>
+    <input type="word"> 
+    <button onclick>بحث</button>
+  </header>
+
+  <div class="container">
+    <!-- البطاقة الأولى -->
+    <div class="card">
+      <h4>كل أنواع الالعاب التي ترغب بتحميلها</h4>
+      <h3>تحميل ألعاب</h3>
+      <a href="clock.html">اذهب للصفحة</a>
+    </div>
+
+    <!-- البطاقة الثانية -->
+    <div class="card">
+      <h4>جميع أنواع البرامج للهاتف</h4>
+      <h3>تحميل برامج</h3>
+      <a href="whatsapp.html">اذهب للصفحة</a>
+    </div>
+
+    <!-- البطاقة الثالثة -->
+    <div class="card">
+      <h4>أختر الأغاني التي تفضلها </h4>
+      <h3>تحميل أغاني</h3>
+      <a href="messenger.html">اذهب للصفحة</a>
+    </div>
+
+    <!-- البطاقة الرابعة -->
+    <div class="card">
+      <h4>صور متنوعة حسب الرغبة</h4>
+      <h3>تحميل صور</h3>
+      <a href="firefox.html">اذهب للصفحة</a>
+    </div>
+
+    <!-- البطاقة الخامسة -->
+    <div class="card">
+      <h3>تحميل فيديوهات</h3>
+      <h4>ستستمع بمشاهدة هذه الفيدوهات</h4>
+      <a href="opera.html">اذهب للصفحة</a>
+    </div>
+
+    <!-- البطاقة السادسة -->
+    <div class="card">
+      <h3>تحميل أفلام</h3>
+      <h4>نحن نتمنى لكم مشاهدة سعيدة </h4>
+      <a href="security.html">اذهب للصفحة</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 موقع تحميل البرامج. جميع الحقوق محفوظة.</p>
+    <button id="backToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; background-color: #007BFF; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">⬆️</button>
+  </footer>
+  <input type="text" placeholder="ابحث عن برنامج أو لعبة..." id="searchInput">
+<button onclick="search()">بحث</button>
+<script>
+  function search() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    if (query.includes('ألعاب')) window.location.href = 'clock.html';
+    else if (query.includes('برامج')) window.location.href = 'whatsapp.html';
+    else alert('لم يتم العثور على نتائج');
+  }
+</script>
+<script>
+  const backToTop = document.getElementById('backToTop');
+  window.onscroll = () => {
+    backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+  };
+  backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+</script>
+<script>
+  function search() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    if (query.includes('ألعاب')) {
+      window.location.href = 'clock.html';
+    } else if (query.includes('برامج')) {
+      window.location.href = 'whatsapp.html';
+    } else if (query.includes('أغاني')) {
+      window.location.href = 'messenger.html';
+    } else if (query.includes('صور')) {
+      window.location.href = 'firefox.html';
+    } else if (query.includes('فيديوهات')) {
+      window.location.href = 'opera.html';
+    } else if (query.includes('أفلام')) {
+      window.location.href = 'security.html';
+    } else {
+      alert('عذرًا، لم يتم العثور على نتائج للبحث.');
+    }
+  }
+</script>
+</body>
+</html>
